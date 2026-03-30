@@ -1,4 +1,4 @@
-
+import BannerSection from './component/BannerSection'
 import Banner from './component/Banner'
 import NavBar from './component/NavBar'
 
@@ -9,6 +9,7 @@ function App() {
     <>
        <NavBar/>
        <Banner/>
+       <BannerSection/>
     </>
   )
 }
