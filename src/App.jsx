@@ -31,8 +31,8 @@ function App() {
 
        <BannerSection/>
 
-             <div className="text-center space-y-4">
-        <h2 className="text-5xl font-bold">Premium Digital Tools</h2>
+      <div className="text-center space-y-4 mt-10 mx-auto">
+        <h2 className="text-5xl font-bold ">Premium Digital Tools</h2>
         <p className='text-gray-500'>Choose from our curated collection of premium digital products designedto boost your productivity and creativity.</p>
       </div>
 
@@ -52,7 +52,7 @@ function App() {
         type="radio" 
         name="my_tabs_1" 
         className="tab rounded-full text-xl font-bold w-40" 
-        aria-label={`Cart (${carts.length})`}
+        aria-label={`cart(${carts.length})`}
         onClick={() => setActiveTab("cart")}
         />
 

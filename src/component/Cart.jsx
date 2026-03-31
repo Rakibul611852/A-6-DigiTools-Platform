@@ -9,7 +9,7 @@ const Cart = ({ carts = [], setCarts }) => {
     toast.success("Payment Successful!")
   };
 
-  const handleClickRemove = (item) => {
+  const handleClick = (item) => {
    const filteredArray = carts.filter(c => c.id !== item.id);
    setCarts(filteredArray);
    toast.success(`${item.name} "Removed from cart !"`)
@@ -57,7 +57,7 @@ const Cart = ({ carts = [], setCarts }) => {
                   </div>
                 </div>
 
-                <span onClick={()=> handleClickRemove(item)} className=" btn text-lg font-bold text-red-700 cursor-pointer">
+                <span onClick={()=> handleClick(item)} className=" btn text-lg font-bold text-red-700 cursor-pointer">
                   Remove
                 </span>
               </div>

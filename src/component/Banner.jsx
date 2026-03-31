@@ -2,12 +2,12 @@ import BannerImage from "../assets/banner.png";
 
 const Banner = () => {
   return (
-    <div className="relative min-h-162.5 flex items-center overflow-hidden">
-      <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-10">
-        {/* Left Content */}
+    <div className="relative min-h-162.5 flex items-center overflow-hidden ">
+      <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center relative z-12">
+
         <div className="space-y-4">
           <div className="inline-flex items-center gap-2 bg-zinc-600/10 border border-purple-500/30 text-purple-700 text-sm font-medium px-5 py-2 rounded-full">
-            ✨ New: AI-Powered Tools Available
+            <img src="/public/products/bage-icon.png" alt="" /> New: AI-Powered Tools Available
           </div>
 
           <h1 className="text-4xl lg:text-7xl font-bold leading-tight tracking-tighter">
@@ -27,13 +27,12 @@ const Banner = () => {
             </button>
             
             <button className="btn border border-purple-500 text-purple-700 hover:bg-purple-500 hover:text-white transition-all px-8 py-8 rounded-2xl font-semibold text-lg shadow-xl shadow-purple-500/30 flex items-center gap-3 group ">
-            <span className="group-hover:translate-x-1 transition font-bold ">→</span>
+            <span className="group-hover:translate-x-1 transition font-bold "><img src="/public/products/btn-icon.png" alt="" /></span>
               Watch Demo   
             </button>
           </div>
         </div>
 
-        {/* Right Image */}
         <div className="relative flex justify-center lg:justify-end">
           <div className="relative">
             <img
