@@ -1,11 +1,12 @@
 import { useState } from 'react';
 
-const ModelCard = ({ model }) => {
+const ModelCard = ({ model,carts, setCarts }) => {
 
       const [isbuyNow, setBuyNow] = useState(false);    
 
     const handleSubscribe = () => {
         setBuyNow(true)
+         setCarts([...carts, model]);
     }
 
   return (
