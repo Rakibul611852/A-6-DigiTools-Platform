@@ -1,103 +1,121 @@
-
 const TransparentSection = () => {
   return (
-    <div className="max-w-7xl mx-auto">
-        <div className="justify-center items-center text-center gap-x-40 flex flex-col mb-20">
-            <h1 className="text-3xl lg:text-5xl font-bold mt-30 mb-5">Simple, Transparent Pricing</h1>
-            <p>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
+    <div className="max-w-7xl mx-auto px-4 py-16">
+
+      {/* Header */}
+      <div className="text-center mb-16">
+        <h1 className="text-3xl lg:text-5xl font-bold mb-4">
+          Simple, Transparent Pricing
+        </h1>
+        <p className="text-gray-500">
+          Choose the plan that fits your needs. Upgrade or downgrade anytime.
+        </p>
+      </div>
+
+      {/* Cards */}
+      <div className="grid md:grid-cols-3 gap-8">
+
+        {/* Starter */}
+        <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition">
+          <div className="card-body">
+
+            <h2 className="card-title">Starter</h2>
+            <p className="text-sm text-gray-500">Perfect for getting started</p>
+
+            <div className="mt-4">
+              <span className="text-3xl font-bold">$0</span>
+              <span className="text-gray-400"> /month</span>
+            </div>
+
+            <ul className="mt-4 space-y-2 text-sm">
+              <li>✅ Access to 10 free tools</li>
+              <li>✅ Basic templates</li>
+              <li>✅ Community support</li>
+              <li>✅ 1 project per month</li>
+            </ul>
+
+            <div className="card-actions mt-6">
+              <button className="btn btn-primary w-full rounded-full">
+                Get Started Free
+              </button>
+            </div>
+
+          </div>
         </div>
 
-        <div className=" flex flex-col md:flex-row gap-10 justify-center  mb-20">
+        {/* Pro (Highlighted) */}
+        <div className="card bg-primary text-primary-content shadow-2xl scale-105 relative">
 
-              <div className="border rounded-lg p-8 hover:bg-purple-800 hover:text-white ">
-                 <div className="mb-5">
-                    <h2 className="text-2xl font-bold">Starter</h2>
-                    <p>Perfect for getting started</p>
-                 </div>
+          {/* Badge */}
+          <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+            <span className="bg-red-50 text-red-800 border border-red-200 text-xs font-semibold px-4 py-1 rounded-full shadow-lg shadow-zink-300">
+              Most Popular
+            </span>
+          </div>
 
-                 <div className="flex items-center">
-                     <h2 className="text-2xl font-bold">$0</h2>
-                     <p>/Month</p>
-                 </div>
+          <div className="card-body">
 
-                 <div className=" items-center gap-8 text-sm hover:text-white pt-6">
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>Access to 10 free tools</div>
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>Basic templates</div>
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>Community support</div>
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>1 project per month</div>
-                </div>
+            <h2 className="card-title">Pro</h2>
+            <p className="text-sm opacity-80">Best for professionals</p>
 
-                <div className="mt-6">
-                    <button className="bg-purple-500 text-white hover:bg-white hover:text-purple-800 font-bold py-2 px-4 rounded-full transition-colors cursor-pointer">
-                        Get Started Free
-                    </button>
-                </div>
+            <div className="mt-4">
+              <span className="text-3xl font-bold">$99</span>
+              <span> /month</span>
+            </div>
 
+            <ul className="mt-4 space-y-2 text-sm">
+              <li>✅ Access to all premium tools</li>
+              <li>✅ Unlimited templates</li>
+              <li>✅ Priority support</li>
+              <li>✅ Unlimited projects</li>
+              <li>✅ Cloud sync</li>
+              <li>✅ Advanced analytics</li>
+            </ul>
 
-              </div>
+            <div className="card-actions mt-6">
+              <button className="btn btn-white w-full rounded-full">
+                Start Pro Trial
+              </button>
+            </div>
 
-
-                          
-              <div className="border rounded-lg p-8 bg-purple-800 text-white ">
-                   <div><a href="" className="btn border-amber-400 rounded-full mt-[-95px] ml-[32px]">Most Popular</a></div>
-                 <div className="mb-5">
-                    <h2 className="text-2xl font-bold">Pro</h2>
-                    <p>Best for professionals</p>
-                 </div>
-
-                 <div className="flex items-center ">
-                     <h2 className="text-2xl font-bold">$99</h2>
-                     <p>/Month</p>
-                 </div>
-
-                 <div className=" items-center gap-8 text-sm  hover:text-white pt-6">
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>Access to all premium tools</div>
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>Unlimited templates</div>
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>Priority support</div>
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>Unlimited projects</div>
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>Cloud sync</div>
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>Advanced analytics</div>
-                </div>
-
-                 <div className="mt-6">
-                    <button className="bg-white text-purple-800 hover:bg-purple-800 hover:text-white font-bold py-2 px-4 rounded-full transition-colors cursor-pointer">
-                       Start Pro Trial
-                    </button>
-                </div>
-
-              </div>
-
-
-              <div className="border rounded-lg p-8 hover:bg-purple-800 hover:text-white  ">
-                 <div className="mb-5">
-                    <h2 className="text-2xl font-bold">Enterprise</h2>
-                    <p>For teams and businesses</p>
-                 </div>
-
-                 <div className="flex items-center">
-                     <h2 className="text-2xl font-bold">$29</h2>
-                     <p>/Month</p>
-                 </div>
-
-                 <div className=" items-center gap-8 text-sm  hover:text-white pt-6">
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>Everything in Pro</div>
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>Team collaboration</div>
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>Custom integrations</div>
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>Dedicated support</div>
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>SLA guarantee</div>
-                    <div><span className="text-green-700 font-bold text-xl">✓ </span>Custom branding</div>
-                </div>
-
-                <div className="mt-6">
-                    <button className="bg-purple-500 text-white hover:bg-white hover:text-purple-800 font-bold py-2 px-4 rounded-full transition-colors cursor-pointer">
-                        Contact Sales
-                    </button>
-                </div>
-
-              </div>
-
+          </div>
         </div>
+
+        {/* Enterprise */}
+        <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition">
+          <div className="card-body">
+
+            <h2 className="card-title">Enterprise</h2>
+            <p className="text-sm text-gray-500">
+              For teams and businesses
+            </p>
+
+            <div className="mt-4">
+              <span className="text-3xl font-bold">$29</span>
+              <span className="text-gray-400"> /month</span>
+            </div>
+
+            <ul className="mt-4 space-y-2 text-sm">
+              <li>✅ Everything in Pro</li>
+              <li>✅ Team collaboration</li>
+              <li>✅ Custom integrations</li>
+              <li>✅ Dedicated support</li>
+              <li>✅ SLA guarantee</li>
+              <li>✅ Custom branding</li>
+            </ul>
+
+            <div className="card-actions mt-6">
+              <button className="btn btn-primary w-full rounded-full">
+                Contact Sales
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
     </div>
-  )
-}
+  );
+};
+
 export default TransparentSection;

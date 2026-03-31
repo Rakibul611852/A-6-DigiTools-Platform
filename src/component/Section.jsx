@@ -1,27 +1,41 @@
-
 const Section = () => {
   return (
-    <div className="bg-linear-to-r from-purple-900 via-purple-800 to-purple-700 mt-5 text-white ">
-        <div className="justify-center items-center text-center gap-x-40 flex flex-col">
-            <div className="">
-               <h2 className="text-4xl pt-30 mb-5">Ready to Transform Your Workflow?</h2>
-               <p className="mx-auto max-w-md">Join thousands of professionals who are already using Digitools to work smarter.Start your free trial today.</p>
-             </div>
+    <div className="bg-gradient-to-r from-purple-900 via-purple-800 to-purple-700 text-white py-20 mt-10">
+      
+      <div className="max-w-4xl mx-auto text-center px-4">
 
-        <div className="mt-8 gap-10 flex mb-5 ">
-            <button className=" btn border text-white bg-purple-700 hover:bg-white hover:text-purple-950 font-bold py-7 px-10 rounded-full transition-colors">
-               Explore Products
-            </button>
-            <button className=" btn border text-white bg-purple-700 hover:bg-white hover:text-purple-950 font-bold py-7 px-10 rounded-full transition-colors">
-                View Pricing
-            </button>
+        {/* Title */}
+        <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          Ready to Transform Your Workflow?
+        </h2>
+
+        {/* Description */}
+        <p className="max-w-xl mx-auto text-gray-200">
+          Join thousands of professionals who are already using Digitools to work smarter.
+          Start your free trial today.
+        </p>
+
+        {/* Buttons */}
+        <div className="mt-10 flex flex-col md:flex-row justify-center gap-4">
+
+          <button className="btn btn-primary rounded-full px-8">
+            Explore Products
+          </button>
+
+          <button className="btn btn-outline border-white text-white hover:bg-white hover:text-purple-900 rounded-full px-8">
+            View Pricing
+          </button>
+
         </div>
-           <div className="pb-30">
-             <p>14-day free trial • No credit card required • Cancel anytime</p>
-           </div>
+
+        {/* Footer Text */}
+        <p className="mt-8 text-sm text-gray-300">
+          14-day free trial • No credit card required • Cancel anytime
+        </p>
+
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
 export default Section;
