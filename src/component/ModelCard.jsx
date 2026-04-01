@@ -20,8 +20,9 @@ const ModelCard = ({ model,carts, setCarts }) => {
     }
 
   return (
-    <div className='shadow-lg rounded-lg border'>
-            <div className="flex items-center justify-end p-5">
+<div className="">
+      <div className='shadow-xl rounded-lg border border-gray-200 '>
+            <div className="flex items-center justify-end pt-5 pr-5">
               <p>
                 {model?.tag && (
                   <span className={`px-2 py-1 rounded-full text-xs font-semibold ${
@@ -56,10 +57,8 @@ const ModelCard = ({ model,carts, setCarts }) => {
                 {isbuyNow ? "Buy" : "Buy Now"}
               </button>
              </div>
-     
-              
-
           </div>
+</div>
   )
 }
 

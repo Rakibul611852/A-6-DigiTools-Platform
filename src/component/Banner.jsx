@@ -21,7 +21,7 @@ const Banner = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <button className="bg-purple-900 hover:bg-purple-100 hover:text-purple-800 transition-all px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl shadow-purple-500/30 flex items-center gap-3 group text-white cursor-pointer">
+            <button className="bg-gradient-to-r from-indigo-600 via-purple-700 to-pink-400 t hover:bg-purple-100 hover:text-purple-800 transition-all px-8 py-4 rounded-2xl font-semibold text-lg shadow-xl shadow-purple-500/30 flex items-center gap-3 group text-white cursor-pointer">
               Explore Products
 
             </button>

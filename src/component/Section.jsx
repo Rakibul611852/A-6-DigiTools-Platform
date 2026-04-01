@@ -1,6 +1,6 @@
 const Section = () => {
   return (
-    <div className="bg-gradient-to-r from-purple-900 via-purple-800 to-purple-700 text-white py-20 mt-10">
+    <div className="bg-gradient-to-r from-indigo-600 via-purple-700 to-pink-400 text-white py-20 mt-10">
       
       <div className="max-w-4xl mx-auto text-center px-4">
 
@@ -17,13 +17,15 @@ const Section = () => {
 
         <div className="mt-10 flex flex-col md:flex-col-2 md:flex-3 justify-center gap-5">
 
-          <button className="btn btn-primary rounded-full px-8">
+          <div className="flex mx-auto gap-5">
+            <button className="btn btn-primary rounded-full px-8">
             Explore Products
           </button>
 
           <button className="btn btn-outline border-white text-white hover:bg-white hover:text-purple-900 rounded-full px-8">
             View Pricing
           </button>
+          </div>
 
         </div>
 

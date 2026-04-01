@@ -1,25 +1,25 @@
 const TransparentSection = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16">
+    <div className="max-w-7xl mx-auto px-4 py-16 border border-gray-100 rounded-xl shadow-xl mt-30">
 
       {/* Header */}
       <div className="text-center mb-16">
         <h1 className="text-3xl lg:text-5xl font-bold mb-4">
           Simple, Transparent Pricing
         </h1>
-        <p className="text-gray-500">
+        <p className="max-w-xl mx-auto text-gray-500">
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
 
       {/* Cards */}
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-3 gap-10">
 
         {/* Starter */}
         <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition">
-          <div className="card-body">
+          <div className="card-body rounded-2xl ">
 
-            <h2 className="card-title">Starter</h2>
+            <h2 className="card-title text-2xl font-bold">Starter</h2>
             <p className="text-sm text-gray-500">Perfect for getting started</p>
 
             <div className="mt-4">
@@ -35,7 +35,7 @@ const TransparentSection = () => {
             </ul>
 
             <div className="card-actions mt-6">
-              <button className="btn btn-primary w-full rounded-full">
+              <button className="text-white btn bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 w-full rounded-full ">
                 Get Started Free
               </button>
             </div>
@@ -53,9 +53,9 @@ const TransparentSection = () => {
             </span>
           </div>
 
-          <div className="card-body">
+          <div className="card-body bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 rounded-2xl">
 
-            <h2 className="card-title">Pro</h2>
+            <h2 className="card-title text-2xl font-bold">Pro</h2>
             <p className="text-sm opacity-80">Best for professionals</p>
 
             <div className="mt-4">
@@ -83,9 +83,9 @@ const TransparentSection = () => {
 
         {/* Enterprise */}
         <div className="card bg-base-100 shadow-xl hover:shadow-2xl transition">
-          <div className="card-body">
+          <div className="card-body rounded-2xl ">
 
-            <h2 className="card-title">Enterprise</h2>
+            <h2 className="card-title text-2xl font-bold">Enterprise</h2>
             <p className="text-sm text-gray-500">
               For teams and businesses
             </p>
@@ -105,7 +105,7 @@ const TransparentSection = () => {
             </ul>
 
             <div className="card-actions mt-6">
-              <button className="btn btn-primary w-full rounded-full">
+              <button className="text-white btn bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 w-full rounded-full ">
                 Contact Sales
               </button>
             </div>

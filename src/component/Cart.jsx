@@ -17,7 +17,7 @@ const Cart = ({ carts = [], setCarts }) => {
 
   return (
     <div>
-      <div className="space-y-5 mt-10 max-w-5xl mx-auto">
+      <div className="space-y-5 mt-10 max-w-5xl mx-auto border border-gray-200 p-10 rounded-xl shadow-xl">
 
         <h3 className="text-3xl font-bold mt-7">Your Cart</h3>
 
@@ -25,7 +25,7 @@ const Cart = ({ carts = [], setCarts }) => {
         carts.length === 0 ? (
            <div className=" border border-gray-300 p-10 rounded-xl">
                <img className=" mx-auto  h-20 w-20" src="/public/products/shopping-cart.png" alt="" />
-               <p className="text-center text-2xl p-5">
+               <p className="text-center text-2xl p-5 text-gray-400">
                 Your cart is empty.
           </p>
            </div>
@@ -34,7 +34,7 @@ const Cart = ({ carts = [], setCarts }) => {
             {carts.map(item => (
               <div
                 key={item.id}
-                className="flex max-w-5xl mx-auto border p-7 rounded-2xl border-gray-400 shadow-xl items-center justify-between"
+                className="flex max-w-5xl mx-auto border p-7 rounded-2xl border-gray-400 shadow-2xl items-center justify-between"
               >
                 <div className="flex gap-10">
                   

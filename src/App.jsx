@@ -7,6 +7,7 @@ import NavBar from './component/NavBar'
 import Models from './component/Models'
 import Cart from './component/Cart'
 import { useState } from 'react'
+import Started from './component/Started'
 
 
 
@@ -60,6 +61,8 @@ function App() {
 
         {activeTab === "product" && <Models modelPromise={modelPromise} carts={carts} setCarts={setCarts}/>}
         {activeTab === "cart" && <Cart carts={carts} setCarts={setCarts} />}
+
+        <Started/>
 
         <TransparentSection/>
 
